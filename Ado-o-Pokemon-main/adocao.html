@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adote um Pokémon</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Adote um Pokémon</h1>
+    <p>Escolha seu parceiro de jornada!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="adocao.html">Adoção</a>
+    <a href="login.html">Login</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="professores.html">Treinadores</a>
+  </nav>
+
+  <main>
+    <section id="pokemon-list" class="centered-container">
+      <div class="card" onclick="mostrarDetalhes('bulbasaur')">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur" />
+        <h3>Bulbasaur</h3>
+        <p>Idade: 2 anos</p>
+        <button>Quero Adotar</button>
+      </div>
+
+      <div class="card" onclick="mostrarDetalhes('charmander')">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander" />
+        <h3>Charmander</h3>
+        <p>Idade: 3 anos</p>
+        <button>Quero Adotar</button>
+      </div>
+
+      <div class="card" onclick="mostrarDetalhes('squirtle')">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle" />
+        <h3>Squirtle</h3>
+        <p>Idade: 1 ano</p>
+        <button>Quero Adotar</button>
+      </div>
+    </section>
+
+    <section id="detalhes" class="hidden centered-page"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Adote um Pokémon</p>
+  </footer>
+</body>
+</html>

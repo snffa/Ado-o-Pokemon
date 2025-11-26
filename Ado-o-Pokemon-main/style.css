@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #f8f8f8;
+  color: #3b4cca;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, footer {
+  background-color: #e72323;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 4px solid #4053db;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Centralização de seções */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 2em auto;
+  gap: 2em;
+}
+
+.centered-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border: 3px solid #3b4cca;
+  border-radius: 10px;
+  padding: 1em;
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  animation: shake 0.3s;
+}
+
+.card img {
+  width: 100px;
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: #3b4cca;
+  color: white;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  animation: blink 1.5s infinite;
+}
+
+/* Detalhes */
+#detalhes {
+  background-color: #fff;
+  border-top: 3px solid #3b4cca;
+  padding: 2em;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  width: 100%;
+  max-width: 600px;
+}
+
+#detalhes img {
+  width: 150px;
+  margin-bottom: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Animações retrô */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0px #3b4cca; }
+  50% { box-shadow: 0 0 10px #3b4cca; }
+  100% { box-shadow: 0 0 0px #3b4cca; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
